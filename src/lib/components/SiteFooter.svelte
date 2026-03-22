@@ -19,7 +19,9 @@
         <a href="/#characters">Characters</a>
         <a href="/#pricing">Pricing</a>
         <a href="/faq/">FAQ</a>
+        <a href="/terms/">Terms</a>
         <a href="/privacy/">Privacy</a>
+        <a href="/refund-policy/">Refunds</a>
         <a href="/#waitlist">Waitlist</a>
       </div>
     </div>

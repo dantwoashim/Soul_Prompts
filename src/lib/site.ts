@@ -10,7 +10,7 @@ export const aiStudioSteps = [
   },
   {
     title: 'Copy the system prompt',
-    description: 'Hit the copy button on any character page — free lite prompts are ready instantly.'
+    description: 'Hit the copy button on any character page - free lite prompts are ready instantly.'
   },
   {
     title: 'Paste into AI Studio',
@@ -26,7 +26,7 @@ export const featureCards = [
   {
     title: 'Voice-engineered, not vibes',
     description:
-      'Each character has a linguistic fingerprint — specific words they use, words they never use, emoji semantics, and mood-based message patterns.'
+      'Each character has a linguistic fingerprint - specific words they use, words they never use, emoji semantics, and mood-based message patterns.'
   },
   {
     title: 'Behavioral depth',
@@ -36,7 +36,7 @@ export const featureCards = [
   {
     title: 'Compressed Persona Format',
     description:
-      'Full versions use CPF — a compact encoding that costs 70% fewer tokens while delivering richer character behavior than raw prompt text.'
+      'Full versions use CPF - a compact encoding that costs 70% fewer tokens while delivering richer character behavior than raw prompt text.'
   }
 ];
 
@@ -82,7 +82,7 @@ export const faqItems = [
   {
     question: 'What is CPF (Compressed Persona Format)?',
     answer:
-      'CPF is a compact encoding format for character prompts. It packs voice guides, routines, relationship matrices, and behavioral rules into a structured notation that LLMs can parse — while using 70% fewer tokens than the equivalent raw text.'
+      'CPF is a compact encoding format for character prompts. It packs voice guides, routines, relationship matrices, and behavioral rules into a structured notation that LLMs can parse - while using 70% fewer tokens than the equivalent raw text.'
   },
   {
     question: 'Why are lite versions free?',
@@ -92,16 +92,16 @@ export const faqItems = [
   {
     question: 'Can I edit the prompt after copying it?',
     answer:
-      'Yes. You can adapt names, settings, and scene hooks. The easiest way to break quality is stripping voice guidance or behavioral rules — those are what make the characters feel real.'
+      'Yes. You can adapt names, settings, and scene hooks. The easiest way to break quality is stripping voice guidance or behavioral rules - those are what make the characters feel real.'
   },
   {
     question: 'What happens after I buy?',
     answer:
-      'You receive the full CPF-encoded prompt via Gumroad. Paste it into AI Studio system instructions exactly like the lite version — the decoder preamble teaches the AI how to parse the format.'
+      'You receive the full CPF-encoded prompt through the active checkout provider. Paste it into AI Studio system instructions exactly like the lite version - the decoder preamble teaches the AI how to parse the format.'
   },
   {
     question: 'What happens after I join the waitlist?',
     answer:
-      'You get updates when new character drops go live, when creator tools open, and when hosted experiences launch. No spam — just releases.'
+      'You get updates when new character drops go live, when creator tools open, and when hosted experiences launch. No spam - just releases.'
   }
 ];
