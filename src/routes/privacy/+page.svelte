@@ -38,9 +38,12 @@
       <div class="privacy-card spacer-top">
         <h3>Purchases</h3>
         <p class="body-copy">
-          Premium prompt purchases are processed by authorized checkout providers, including
-          Paddle where available. SoulPrompts does not handle payment information directly.
-          Payment data is handled according to the checkout provider's own privacy policy.
+          Premium prompt purchases are processed through Gumroad. SoulPrompts does not handle
+          payment information directly. Refer to
+          <a href="https://gumroad.com/privacy" target="_blank" rel="noopener" style="color: var(--accent);">
+            Gumroad's privacy policy
+          </a>
+          for payment data handling.
         </p>
       </div>
 

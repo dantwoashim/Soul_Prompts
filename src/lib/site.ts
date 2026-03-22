@@ -97,7 +97,7 @@ export const faqItems = [
   {
     question: 'What happens after I buy?',
     answer:
-      'You receive the full CPF-encoded prompt through the active checkout provider. Paste it into AI Studio system instructions exactly like the lite version - the decoder preamble teaches the AI how to parse the format.'
+      'You receive the full CPF-encoded prompt via Gumroad. Paste it into AI Studio system instructions exactly like the lite version - the decoder preamble teaches the AI how to parse the format.'
   },
   {
     question: 'What happens after I join the waitlist?',

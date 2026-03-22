@@ -65,9 +65,9 @@
       <div class="privacy-card spacer-top">
         <h3>Payments and delivery</h3>
         <p class="body-copy">
-          Payments are processed by authorized third-party checkout providers, including Paddle
-          where available. SoulPrompts does not store your full payment card details. Digital
-          products are delivered electronically after checkout is completed successfully.
+          Payments are processed through Gumroad. SoulPrompts does not store your full payment
+          card details. Digital products are delivered electronically after checkout is
+          completed successfully.
         </p>
       </div>
 

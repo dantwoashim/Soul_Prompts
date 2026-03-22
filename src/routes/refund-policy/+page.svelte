@@ -64,8 +64,8 @@
       <div class="privacy-card spacer-top">
         <h3>Processing</h3>
         <p class="body-copy">
-          Approved refunds are returned through the original payment method or checkout provider.
-          Processing times may vary based on Paddle, your bank, or your card issuer.
+          Approved refunds are returned through the original payment method on Gumroad.
+          Processing times may vary based on Gumroad, your bank, or your card issuer.
         </p>
       </div>
     </div>
