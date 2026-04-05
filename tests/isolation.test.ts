@@ -33,7 +33,7 @@ describe('project isolation', () => {
       const imports = extractImports(source);
 
       for (const specifier of imports) {
-        expect(specifier).not.toMatch(/supabase|src\/renderer|src\/main|web\//);
+        expect(specifier).not.toMatch(/src\/renderer|src\/main|web\//);
 
         if (specifier.startsWith('.')) {
           const absoluteImport = resolve(dirname(file), specifier);

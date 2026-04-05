@@ -1,56 +1,66 @@
 import { describe, expect, test } from 'vitest';
-import { characters, getSfwCharacters, getNsfwCharacters } from '../src/lib/content/characters';
+import { buildSeedSnapshot } from '../src/lib/server/cms/seed';
+import { MemoryCmsRepository } from '../src/lib/server/cms/memory-store';
 
-describe('character content', () => {
-  test('ships six characters with the required fields', () => {
-    expect(characters).toHaveLength(6);
+describe('cms-backed prompt content', () => {
+  test('seeds a non-trivial prompt archive with required fields', () => {
+    const snapshot = buildSeedSnapshot();
+    expect(snapshot.prompts.length).toBeGreaterThan(20);
 
-    for (const character of characters) {
-      expect(character.slug).toBeTruthy();
-      expect(character.name).toBeTruthy();
-      expect(character.tagline).toBeTruthy();
-      expect(character.systemPromptLite.length).toBeGreaterThan(300);
-      expect(character.modelNotes.length).toBeGreaterThanOrEqual(3);
-      expect(character.sampleConversation.length).toBeGreaterThanOrEqual(4);
-      expect(character.seo.title).toContain('SoulPrompts');
-      expect(character.seo.description.length).toBeGreaterThan(40);
-      expect(character.tier).toMatch(/^(free|premium|nsfw)$/);
-      expect(character.contentRating).toMatch(/^(sfw|nsfw)$/);
-      expect(typeof character.price).toBe('number');
+    for (const prompt of snapshot.prompts) {
+      expect(prompt.id).toBeTruthy();
+      expect(prompt.draft.slug).toBeTruthy();
+      expect(prompt.draft.title).toBeTruthy();
+      expect(prompt.draft.tagline.length).toBeGreaterThan(10);
+      expect(prompt.draft.overview.length).toBeGreaterThan(20);
+      expect(prompt.draft.modelNotes.length).toBeGreaterThanOrEqual(2);
+      expect(prompt.draft.seo.title).toContain('SoulPrompts');
+      expect(prompt.draft.contentRating).toMatch(/^(sfw|nsfw)$/);
+      expect(prompt.draft.accessMode).toMatch(/^(public|private)$/);
     }
   });
 
-  test('has correct tier distribution', () => {
-    const free = characters.filter((c) => c.tier === 'free');
-    const premium = characters.filter((c) => c.tier === 'premium');
-    const nsfw = characters.filter((c) => c.tier === 'nsfw');
-    expect(free.length).toBe(2);
-    expect(premium.length).toBe(2);
-    expect(nsfw.length).toBe(2);
+  test('seeded archive includes both public and private prompts', () => {
+    const snapshot = buildSeedSnapshot();
+    const publicPrompts = snapshot.prompts.filter((prompt) => prompt.draft.accessMode === 'public');
+    const privatePrompts = snapshot.prompts.filter((prompt) => prompt.draft.accessMode === 'private');
+
+    expect(publicPrompts.length).toBeGreaterThan(0);
+    expect(privatePrompts.length).toBeGreaterThan(0);
   });
 
-  test('premium and nsfw characters have price and CPF preview', () => {
-    const paid = characters.filter((c) => c.tier === 'premium' || c.tier === 'nsfw');
-    for (const character of paid) {
-      expect(character.price).toBeGreaterThan(0);
-      expect(character.systemPromptCpfPreview.length).toBeGreaterThan(50);
-      expect(character.stats.fullLines).toBeGreaterThan(character.stats.liteLines);
-    }
+  test('public prompt pages expose the full prompt while private ones do not', async () => {
+    const repository = new MemoryCmsRepository();
+    const publicPage = await repository.getPublishedPromptBySlug('megha-boyfriend');
+    const privatePage = await repository.getPublishedPromptBySlug('priya-after-hours');
+
+    expect(publicPage).not.toBeNull();
+    expect(privatePage).not.toBeNull();
+    expect(publicPage?.isPrivate).toBe(false);
+    expect(publicPage?.prompt.fullPrompt.length).toBeGreaterThan(100);
+    expect(privatePage?.isPrivate).toBe(true);
+    expect(privatePage?.prompt.fullPrompt).toBe('');
+    expect(privatePage?.patreonUrl.length).toBeGreaterThan(0);
   });
 
-  test('SFW/NSFW filter helpers work correctly', () => {
-    const sfw = getSfwCharacters();
-    const nsfw = getNsfwCharacters();
-    expect(sfw.length).toBe(4);
-    expect(nsfw.length).toBe(2);
-    expect(sfw.every((c) => c.contentRating === 'sfw')).toBe(true);
-    expect(nsfw.every((c) => c.contentRating === 'nsfw')).toBe(true);
+  test('homepage shelves remain populated from the cms repository', async () => {
+    const repository = new MemoryCmsRepository();
+    const data = await repository.getPublishedHomePage();
+
+    expect(data.archiveHighlights.length).toBeGreaterThan(0);
+    expect(data.memberDrops.length).toBeGreaterThan(0);
+    expect(data.promptCounts.totalPrompts).toBeGreaterThan(20);
+    expect(data.archiveHighlights.every((prompt) => prompt.accessMode === 'public' || prompt.featuredGroups.includes('home_featured'))).toBe(true);
   });
 
-  test('NSFW characters have higher prices than SFW', () => {
-    const nsfw = getNsfwCharacters();
-    for (const character of nsfw) {
-      expect(character.price).toBeGreaterThan(9.99);
-    }
+  test('related prompt recommendations prefer the same content rating', async () => {
+    const repository = new MemoryCmsRepository();
+    const sfwPage = await repository.getPublishedPromptBySlug('megha-boyfriend');
+    const nsfwPage = await repository.getPublishedPromptBySlug('priya-after-hours');
+
+    expect(sfwPage?.related.length).toBeGreaterThan(0);
+    expect(sfwPage?.related.every((prompt) => prompt.contentRating === 'sfw')).toBe(true);
+    expect(nsfwPage?.related.length).toBeGreaterThan(0);
+    expect(nsfwPage?.related.every((prompt) => prompt.contentRating === 'nsfw')).toBe(true);
   });
 });

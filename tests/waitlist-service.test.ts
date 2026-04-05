@@ -28,6 +28,17 @@ describe('waitlist service', () => {
     expect(global.fetch).toHaveBeenCalledOnce();
   });
 
+  test('rejects invalid email addresses before calling the network', async () => {
+    global.fetch = vi.fn();
+    const client = createButtondownWaitlistClient('https://buttondown.com/api/emails/embed-subscribe/test');
+
+    const result = await client.submit('not-an-email');
+
+    expect(result.status).toBe('error');
+    expect(result.message).toContain('valid email');
+    expect(global.fetch).not.toHaveBeenCalled();
+  });
+
   test('returns error when the network request fails', async () => {
     global.fetch = vi.fn().mockRejectedValue(new Error('network'));
     const client = createButtondownWaitlistClient('https://buttondown.com/api/emails/embed-subscribe/test');

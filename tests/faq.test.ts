@@ -6,7 +6,14 @@ describe('FaqList', () => {
   test('tracks a custom event when a question opens', async () => {
     window.plausible = vi.fn();
 
-    const { container } = render(FaqList);
+    const { container } = render(FaqList, {
+      items: [
+        {
+          question: 'Do these prompts work in AI Studio?',
+          answer: 'Yes.'
+        }
+      ]
+    });
     const details = container.querySelector('details');
 
     expect(details).not.toBeNull();
