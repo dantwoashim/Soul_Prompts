@@ -21,7 +21,7 @@
       <div class="privacy-card">
         <h3>What we collect</h3>
         <p class="body-copy">
-          SoulPrompts only collects your email address if you choose to join the waitlist.
+          SoulPrompts only collects your email address if you choose to join the email list.
           We use Plausible Analytics for privacy-friendly, cookie-free pageview tracking.
           No personal data is sold or shared.
         </p>
@@ -38,19 +38,15 @@
       <div class="privacy-card spacer-top">
         <h3>Purchases</h3>
         <p class="body-copy">
-          Premium prompt purchases are processed through Gumroad. SoulPrompts does not handle
-          payment information directly. Refer to
-          <a href="https://gumroad.com/privacy" target="_blank" rel="noopener" style="color: var(--accent);">
-            Gumroad's privacy policy
-          </a>
-          for payment data handling.
+          Paid memberships and premium drops are handled through third-party payment platforms. SoulPrompts does not
+          process payment information directly. Refer to the checkout platform you used for payment-data handling.
         </p>
       </div>
 
       <div class="privacy-card spacer-top">
         <h3>Contact</h3>
         <p class="body-copy">
-          Questions about privacy? Reach out through the waitlist form or reply to any SoulPrompts email.
+          Questions about privacy? Reply to any SoulPrompts email.
         </p>
       </div>
     </div>

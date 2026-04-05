@@ -55,8 +55,8 @@
       <div class="privacy-card spacer-top">
         <h3>How to request a refund</h3>
         <p class="body-copy">
-          Contact SoulPrompts within 7 days of purchase through the waitlist form or by replying
-          to any SoulPrompts email. Please include the purchase email, order confirmation, and a
+          Contact SoulPrompts within 7 days of purchase by replying to any SoulPrompts email.
+          Please include the purchase email, order confirmation, and a
           short description of the problem so the issue can be reviewed quickly.
         </p>
       </div>
@@ -64,8 +64,9 @@
       <div class="privacy-card spacer-top">
         <h3>Processing</h3>
         <p class="body-copy">
-          Approved refunds are returned through the original payment method on Gumroad.
-          Processing times may vary based on Gumroad, your bank, or your card issuer.
+          Approved refunds are returned through the original payment method on the payment
+          platform used for the purchase. Processing times may vary based on the platform, your bank,
+          or your card issuer.
         </p>
       </div>
     </div>

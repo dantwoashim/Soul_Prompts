@@ -12,6 +12,7 @@ export interface WaitlistClient {
 }
 
 const storageKey = 'soulprompts.waitlist.submissions';
+const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
 function readLocalEmails(): string[] {
   if (!browser) {
@@ -47,6 +48,13 @@ export function createButtondownWaitlistClient(
         return {
           status: 'error',
           message: 'Enter an email address first.'
+        };
+      }
+
+      if (!emailPattern.test(normalizedEmail)) {
+        return {
+          status: 'error',
+          message: 'Enter a valid email address.'
         };
       }
 

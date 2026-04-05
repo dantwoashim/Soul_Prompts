@@ -65,9 +65,10 @@
       <div class="privacy-card spacer-top">
         <h3>Payments and delivery</h3>
         <p class="body-copy">
-          Payments are processed through Gumroad. SoulPrompts does not store your full payment
-          card details. Digital products are delivered electronically after checkout is
-          completed successfully.
+          Paid memberships and premium releases are processed through third-party payment or
+          membership platforms. SoulPrompts does not store your full payment card details.
+          Digital prompt access is delivered electronically after the platform confirms
+          successful payment and account access.
         </p>
       </div>
 
@@ -103,8 +104,8 @@
       <div class="privacy-card spacer-top">
         <h3>Contact</h3>
         <p class="body-copy">
-          Questions about these terms, billing, or access issues can be sent through the
-          waitlist form or by replying to any SoulPrompts email.
+          Questions about these terms, billing, or access issues can be sent by replying to any
+          SoulPrompts email.
         </p>
       </div>
     </div>

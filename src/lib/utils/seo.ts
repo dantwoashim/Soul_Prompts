@@ -1,13 +1,18 @@
 import { siteDescription, siteName, siteTagline } from '$lib/site';
 
-const fallbackOrigin = 'https://soulprompts.example.com';
-
-export function getSiteOrigin(): string {
-  return import.meta.env.PUBLIC_SITE_URL || fallbackOrigin;
+export function getSiteOrigin(explicitOrigin?: string | null): string | null {
+  const origin = explicitOrigin?.trim() || import.meta.env.PUBLIC_SITE_URL?.trim();
+  return origin ? origin.replace(/\/+$/, '') : null;
 }
 
-export function getAbsoluteUrl(path: string): string {
-  return new URL(path, `${getSiteOrigin()}/`).toString();
+export function getAbsoluteUrl(path: string, explicitOrigin?: string | null): string | null {
+  const origin = getSiteOrigin(explicitOrigin);
+
+  if (!origin) {
+    return null;
+  }
+
+  return new URL(path, `${origin}/`).toString();
 }
 
 export function getDefaultSeo() {

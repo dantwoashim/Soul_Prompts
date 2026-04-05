@@ -1,6 +1,8 @@
 <script lang="ts">
-  import { faqItems } from '$lib/site';
+  import type { FaqDocument } from '$lib/cms/types';
   import { trackEvent } from '$lib/utils/analytics';
+
+  export let items: FaqDocument['items'];
 
   function handleToggle(event: Event, question: string): void {
     const details = event.currentTarget as HTMLDetailsElement;
@@ -10,17 +12,17 @@
   }
 </script>
 
-<div class="faq-card">
-  <h3>Frequently asked</h3>
-
-  {#each faqItems as item}
-    <div class="faq-item">
+<div class="grid gap-4">
+  {#each items as item}
+    <div class="editorial-panel p-6">
       <details on:toggle={(event) => handleToggle(event, item.question)}>
-        <summary>
-          <span>{item.question}</span>
-          <span>+</span>
+        <summary class="flex cursor-pointer list-none items-start justify-between gap-4 text-left">
+          <span class="font-display text-[2rem] leading-none tracking-[-0.03em] text-[var(--text)]">
+            {item.question}
+          </span>
+          <span class="text-[var(--gold)]">+</span>
         </summary>
-        <p>{item.answer}</p>
+        <p class="mt-5 text-sm leading-7 text-[var(--text-muted)]">{item.answer}</p>
       </details>
     </div>
   {/each}

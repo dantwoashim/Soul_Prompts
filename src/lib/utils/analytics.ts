@@ -3,7 +3,8 @@ export type AnalyticsEvent =
   | 'Waitlist Submit'
   | 'Character Page View'
   | 'FAQ Open'
-  | 'Buy Click';
+  | 'Buy Click'
+  | 'Membership Click';
 
 export function trackEvent(eventName: AnalyticsEvent, props: Record<string, string> = {}): void {
   if (typeof window === 'undefined' || typeof window.plausible !== 'function') {

@@ -1,29 +1,28 @@
 <script lang="ts">
-  export {};
+  import type { FooterDocument } from '$lib/cms/types';
+
+  export let footer: FooterDocument;
 </script>
 
-<footer class="site-footer">
-  <div class="container">
-    <div class="site-footer__panel">
-      <div>
-        <h2 class="detail-title">
-          Character systems this deep don't exist anywhere else.
-        </h2>
-        <p>
-          Free lite prompts are live now. Full CPF-encoded characters, creator tools, and hosted experiences ship when demand proves the craft is valued.
-        </p>
-      </div>
+<footer class="mt-24 border-t border-[rgba(255,198,62,0.08)] bg-[rgba(10,10,10,0.68)]">
+  <div class="site-wrap-wide grid gap-10 px-0 py-14 md:grid-cols-[1.4fr_1fr]">
+    <div class="space-y-4">
+      <div class="eyebrow">{footer.eyebrow}</div>
+      <h2 class="font-display text-[2.4rem] leading-none tracking-[-0.04em] text-[var(--text)]">
+        {footer.title}
+      </h2>
+      <p class="max-w-2xl text-sm leading-7 text-[var(--text-muted)]">
+        {footer.body}
+      </p>
+      <a href={footer.ctaHref} class="gold-button mt-2">
+        {footer.ctaLabel}
+      </a>
+    </div>
 
-      <div class="site-footer__links" aria-label="Footer">
-        <a href="/">Home</a>
-        <a href="/#characters">Characters</a>
-        <a href="/#pricing">Pricing</a>
-        <a href="/faq/">FAQ</a>
-        <a href="/terms/">Terms</a>
-        <a href="/privacy/">Privacy</a>
-        <a href="/refund-policy/">Refunds</a>
-        <a href="/#waitlist">Waitlist</a>
-      </div>
+    <div class="grid gap-3 text-sm text-[var(--text-dim)]" aria-label="Footer">
+      {#each footer.links as link}
+        <a class="link-underline w-fit" href={link.href}>{link.label}</a>
+      {/each}
     </div>
   </div>
 </footer>
