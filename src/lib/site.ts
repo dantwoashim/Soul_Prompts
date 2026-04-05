@@ -1,74 +1,75 @@
 export const siteName = 'SoulPrompts';
-export const siteTagline = 'Character systems for AI Studio';
+export const siteTagline = 'AI character prompts for Gemini AI Studio';
 export const siteDescription =
-  'Deeply engineered roleplay character prompts with voice guides, behavioral routines, and emotional state management. Free lite versions plus premium CPF-encoded character engines.';
+  'Cinematic AI character prompts, guided AI Studio tutorials, and premium releases for creators who want emotionally precise conversations instead of generic roleplay.';
 
 export const aiStudioSteps = [
   {
     title: 'Pick a character',
-    description: 'Browse the library and find a character that matches your scene.'
+    description: 'Browse the archive and choose a character whose mood, pacing, and relationship dynamic fits your scene.'
   },
   {
     title: 'Copy the system prompt',
-    description: 'Hit the copy button on any character page - free lite prompts are ready instantly.'
+    description:
+      'Use the copy button on the character page to grab the starter prompt or preview block exactly as it should be pasted.'
   },
   {
     title: 'Paste into AI Studio',
-    description: 'Drop the prompt into System Instructions before starting your chat.'
+    description: 'Paste the block into AI Studio System instructions before you type your first message.'
   },
   {
     title: 'Open with intent',
-    description: 'Give the model a scene, a tension, or a relationship dynamic. The character handles the rest.'
+    description:
+      'Start with a concrete scene, pressure point, or relationship beat. The prompt handles tone, memory, and voice.'
   }
 ];
 
 export const featureCards = [
   {
-    title: 'Voice-engineered, not vibes',
+    title: 'Voice-engineered, not generic',
     description:
-      'Each character has a linguistic fingerprint - specific words they use, words they never use, emoji semantics, and mood-based message patterns.'
+      'Each character carries a linguistic fingerprint with phrase habits, pacing rules, emotional tells, and scene logic that stays consistent.'
   },
   {
-    title: 'Behavioral depth',
+    title: 'Built for AI Studio first',
     description:
-      'Premium characters include daily routines, emotional state modifiers, and relationship matrices that make them behave differently at 2 AM vs 10 AM.'
+      'Every prompt is shaped around Gemini and AI Studio system instructions, then adapted cleanly to other chat models when needed.'
   },
   {
-    title: 'Compressed Persona Format',
+    title: 'Premium packs with more range',
     description:
-      'Full versions use CPF - a compact encoding that costs 70% fewer tokens while delivering richer character behavior than raw prompt text.'
+      'Full releases add deeper variants, stronger setup notes, and longer prompt systems that keep the character stable for more of the conversation.'
   }
 ];
 
 export const pricingTiers = [
   {
-    name: 'Lite',
+    name: 'Starter',
     price: 'Free',
-    description: 'Strong starting prompts for immediate use.',
+    description: 'Public prompts and tutorials that get creators running fast.',
     features: [
-      'Core personality & voice guide',
-      'Basic behavioral rules',
-      'Works in AI Studio, ChatGPT, Claude',
-      'Copy-paste ready',
+      'Character summary and prompt preview',
+      'AI Studio setup walkthrough',
+      'Copy-paste ready starter blocks',
+      'Archive access and discovery',
     ],
-    cta: 'Browse free characters',
-    ctaHref: '#characters',
+    cta: 'Explore the archive',
+    ctaHref: '/catalog',
     featured: false
   },
   {
-    name: 'Full CPF',
-    price: '$9.99',
-    description: 'The complete character engine in compressed format.',
+    name: 'Membership',
+    price: 'Membership',
+    description: 'Recurring drops, full prompt packs, and premium variants.',
     features: [
-      'Everything in Lite, plus:',
-      '7 daily routine blocks with state modifiers',
-      'Multiple interaction modes (chat, god mode, mind access)',
-      'Relationship matrix with trust tracking',
-      'Emotional state management',
-      '70% fewer tokens than raw prompts',
+      'Full packs and members-only releases',
+      'Curated universes and themed drops',
+      'Creator notes and prompt upgrades',
+      'Centralized delivery through the membership vault',
+      'Future dashboard publishing workflow',
     ],
-    cta: 'View premium characters',
-    ctaHref: '#characters',
+    cta: 'Join the membership',
+    ctaHref: '/vault/',
     featured: true
   }
 ];
@@ -77,31 +78,31 @@ export const faqItems = [
   {
     question: 'Do these prompts work in AI Studio?',
     answer:
-      'Yes. Each character is written to drop directly into AI Studio system instructions. They also work in ChatGPT, Claude, and any LLM that honors a system prompt.'
+      'Yes. SoulPrompts are written to drop directly into Gemini AI Studio system instructions. Most also work in ChatGPT, Claude, and other models that respect a system prompt.'
   },
   {
-    question: 'What is CPF (Compressed Persona Format)?',
+    question: 'What do members get?',
     answer:
-      'CPF is a compact encoding format for character prompts. It packs voice guides, routines, relationship matrices, and behavioral rules into a structured notation that LLMs can parse - while using 70% fewer tokens than the equivalent raw text.'
+      'Members get full prompt packs, premium variants, deeper releases, and recurring drops that go beyond the public starter versions.'
   },
   {
-    question: 'Why are lite versions free?',
+    question: 'Why are starter versions public?',
     answer:
-      'The free versions are strong enough to use today, but intentionally trimmed. They prove the quality. If people use them and want more, the premium editions deliver the full behavioral engine.'
+      'The public versions are strong enough to create a real conversation today, but intentionally trimmed. They show the craft while leaving room for deeper members-only releases.'
   },
   {
     question: 'Can I edit the prompt after copying it?',
     answer:
-      'Yes. You can adapt names, settings, and scene hooks. The easiest way to break quality is stripping voice guidance or behavioral rules - those are what make the characters feel real.'
+      'Yes. You can adapt names, settings, and scene hooks. The easiest way to hurt quality is stripping the voice guidance or behavioral rules, so edit lightly at first.'
   },
   {
-    question: 'What happens after I buy?',
+    question: 'What happens after I join membership?',
     answer:
-      'You receive the full CPF-encoded prompt via Gumroad. Paste it into AI Studio system instructions exactly like the lite version - the decoder preamble teaches the AI how to parse the format.'
+      'You unlock the full prompt packs, premium variants, and member releases. The setup stays simple: paste the prompt into AI Studio system instructions and start with a strong first scene.'
   },
   {
-    question: 'What happens after I join the waitlist?',
+    question: 'Do you send update emails?',
     answer:
-      'You get updates when new character drops go live, when creator tools open, and when hosted experiences launch. No spam - just releases.'
+      'Yes. When email updates are open, subscribers get launch notes for new character drops, major tutorials, and membership releases. No spam, just launches.'
   }
 ];

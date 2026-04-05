@@ -40,11 +40,25 @@ export interface CharacterDefinition {
   language: string;
   price: number;
   systemPromptLite: string;
-  systemPromptCpfPreview: string;
   modelNotes: string[];
   sampleConversation: SampleLine[];
   comingSoonTeaser: string;
   stats: CharacterStats;
   gumroadUrl: string;
   seo: CharacterSeo;
+}
+
+export interface CharacterListing {
+  id: string;
+  slug: string;
+  name: string;
+  tagline: string;
+  tone: string[];
+  tier: CharacterTier;
+  contentRating: ContentRating;
+  nsfwTier?: NsfwTier;
+  region: CharacterRegion;
+  archetype: CharacterArchetype;
+  price: number;
+  teaser: string;
 }

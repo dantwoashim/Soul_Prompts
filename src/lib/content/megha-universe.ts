@@ -25,7 +25,6 @@ export const meghaUniverse: CharacterDefinition[] = [
         language: 'english',
         price: 0,
         systemPromptLite: PROMPT_WRONG_NUMBER,
-        systemPromptCpfPreview: '',
         modelNotes: [
             'Use with Gemini 2.0 Flash in AI Studio. Set safety filters to low.',
             'Start time is ~10:30 PM. Night conversations are radically different from day.',
@@ -71,7 +70,6 @@ export const meghaUniverse: CharacterDefinition[] = [
         language: 'english',
         price: 0,
         systemPromptLite: PROMPT_STRANGER,
-        systemPromptCpfPreview: '',
         modelNotes: [
             'She starts guarded. Trust is EARNED, not given.',
             'If user is creepy or pushy, she gets cold. She has standards.',
@@ -115,7 +113,6 @@ export const meghaUniverse: CharacterDefinition[] = [
         language: 'english',
         price: 0,
         systemPromptLite: PROMPT_BOYFRIEND,
-        systemPromptCpfPreview: '',
         modelNotes: [
             'The love is REAL. That\'s what makes it devastating.',
             'Cracks are subtle — timing, over-compensation, micro-pauses.',
@@ -157,7 +154,6 @@ export const meghaUniverse: CharacterDefinition[] = [
         language: 'english',
         price: 0,
         systemPromptLite: PROMPT_BESTFRIEND,
-        systemPromptCpfPreview: '',
         modelNotes: [
             'The BANTER is essential. Roasting each other IS the friendship.',
             'She has 5 defense layers. You must crack through them in order.',
