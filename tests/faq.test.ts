@@ -9,7 +9,7 @@ describe('FaqList', () => {
     const { container } = render(FaqList, {
       items: [
         {
-          question: 'Do these prompts work in AI Studio?',
+          question: 'Where do these character packs work?',
           answer: 'Yes.'
         }
       ]
@@ -26,7 +26,7 @@ describe('FaqList', () => {
     details.dispatchEvent(new Event('toggle'));
 
     expect(window.plausible).toHaveBeenCalledWith('FAQ Open', {
-      props: { question: 'Do these prompts work in AI Studio?' }
+      props: { question: 'Where do these character packs work?' }
     });
   });
 });

@@ -28,10 +28,10 @@
       </div>
 
       <div class="privacy-card spacer-top">
-        <h3>Prompt data</h3>
+        <h3>Conversation data</h3>
         <p class="body-copy">
-          Prompts you copy from this site are pasted into your own AI Studio session.
-          SoulPrompts does not see, store, or process any content from your AI conversations.
+          Any material you copy from this site runs in your own chat workspace.
+          SoulPrompts does not see, store, or process the conversations you continue there.
         </p>
       </div>
 

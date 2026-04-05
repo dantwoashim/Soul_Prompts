@@ -107,19 +107,19 @@
 
 <Seo
   title="Conversation Cleaner | SoulPrompts"
-  description="Transform raw AI Studio conversation exports into clean, readable documents with this free in-browser tool from SoulPrompts."
+  description="Transform raw conversation exports into clean, readable documents with this free in-browser tool from SoulPrompts."
   path="/tools/convo-cleaner/"
 />
 
-<!-- ──────────────────────────────────────────────────────────────
+<!-- â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
      Desktop: 2-col split
        LEFT (sticky): header + upload zone + how it works
        RIGHT (scrollable): results / upsell
      Mobile: single column
-     ──────────────────────────────────────────────────────────── -->
+     â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
 <div class="min-h-screen lg:flex">
 
-  <!-- ── LEFT PANEL ─────────────────────────────────────────── -->
+  <!-- â”€â”€ LEFT PANEL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
   <div class="lg:w-[48%] lg:flex-shrink-0 lg:sticky lg:top-0 lg:h-screen lg:overflow-y-auto
               px-8 lg:px-14 pt-10 lg:pt-16 pb-8 space-y-10">
 
@@ -129,12 +129,12 @@
       <h1 class="font-[Newsreader] italic text-[#e5e1e4] leading-tight mb-4"
         style="font-size: clamp(2.5rem, 5vw, 4.5rem);">Conversation<br/>Cleaner</h1>
       <p class="font-[Manrope] text-sm leading-relaxed" style="color: #c9c4d8;">
-        Don't let your stories die in messy exports. Transform raw AI logs into polished, readable prose.
+        Don't let your stories die in messy exports. Transform raw conversation logs into polished, readable prose.
       </p>
     </div>
 
     {#if !parseResult}
-      <!-- ── Upload Zone ──────────────────────────── -->
+      <!-- â”€â”€ Upload Zone â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
       <div class="relative group">
         <!-- glow backdrop -->
         <div
@@ -168,7 +168,7 @@
       <!-- Error -->
       {#if parseError}
         <div class="px-4 py-3 rounded-sm text-sm font-[Manrope]" style="background: rgba(147,0,10,0.15); border: 1px solid rgba(255,180,171,0.2); color: #ffb4ab;">
-          ⚠ {parseError}
+          âš  {parseError}
         </div>
       {/if}
 
@@ -176,8 +176,8 @@
       <div class="space-y-4">
         <p class="text-xs uppercase tracking-widest font-[Manrope]" style="color: #484555;">How it works</p>
         {#each [
-          'Export your conversation from Google AI Studio as a JSON file via Google Drive',
-          'Drop the file above — everything runs in your browser, nothing is sent to any server',
+          'Export your conversation as a JSON file from your chat workspace',
+          'Drop the file above. Everything runs in your browser, and nothing is sent to any server.',
           'Download a clean, formatted Markdown or chapterized text output instantly'
         ] as step, i}
           <div class="flex items-start gap-3 text-sm font-[Manrope]" style="color: #c9c4d8;">
@@ -188,7 +188,7 @@
         {/each}
       </div>
     {:else}
-      <!-- ── Left panel when results visible: stats + inputs ── -->
+      <!-- â”€â”€ Left panel when results visible: stats + inputs â”€â”€ -->
       <div class="space-y-8">
         <!-- Progress bar -->
         {#if progress < 100}
@@ -220,7 +220,7 @@
           <!-- Size reduction -->
           <div class="p-4 rounded-sm text-center" style="background: #1b1b1d;">
             <span class="font-[Newsreader] text-xl" style="color: #ffb95a;">
-              {parseResult!.stats.originalSizeKb}KB → {parseResult!.stats.cleanedSizeKb}KB
+              {parseResult!.stats.originalSizeKb}KB â†’ {parseResult!.stats.cleanedSizeKb}KB
             </span>
             <span class="block text-[10px] uppercase tracking-widest font-[Manrope] mt-1" style="color: #928ea1;">Size reduction</span>
           </div>
@@ -254,7 +254,7 @@
             </button>
             <button onclick={reset}
               class="w-full h-10 bg-transparent font-[Manrope] text-xs uppercase tracking-widest text-[#928ea1] hover:text-[#e5e1e4] transition-colors">
-              ↺ Upload another file
+              â†º Upload another file
             </button>
           </div>
         {/if}
@@ -263,11 +263,11 @@
 
     <!-- Powered by footer -->
     <div class="pt-4" style="opacity: 0.3;">
-      <p class="text-[10px] font-[Manrope] uppercase tracking-tighter">Powered by Aetheris Neural Engine v4.2</p>
+      <p class="text-[10px] font-[Manrope] uppercase tracking-tighter">Local browser processing</p>
     </div>
   </div>
 
-  <!-- ── RIGHT PANEL ────────────────────────────────────────── -->
+  <!-- â”€â”€ RIGHT PANEL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
   <div class="flex-1 border-l hidden lg:flex flex-col justify-center px-14 py-16"
     style="border-color: rgba(72,69,85,0.06); background: #0e0e10;">
 
@@ -278,15 +278,15 @@
           <span class="material-symbols-outlined block mb-6" style="font-size: 48px; color: rgba(224,182,255,0.3);">cleaning_services</span>
           <h2 class="font-[Newsreader] text-3xl italic text-[#e5e1e4] mb-4">What this tool does</h2>
           <p class="font-[Manrope] text-sm leading-relaxed" style="color: #c9c4d8;">
-            AI Studio exports contain a lot of synthetic noise — thinking blocks, metadata, formatting artifacts. This tool strips all of it and gives you clean, readable prose for archiving, continuing, or sharing your character conversations.
+            Conversation exports usually contain a lot of noise: hidden reasoning blocks, metadata, and formatting artifacts. This tool strips that out and gives you clean, readable prose for archiving, continuing, or sharing your character conversations.
           </p>
         </div>
 
         <div class="space-y-6">
           {#each [
-            ['Removes thinking blocks', 'Strips internal AI reasoning noise from outputs'],
+            ['Removes hidden reasoning blocks', 'Strips non-conversational scaffolding from exports'],
             ['Formats dialogue', 'Structures exchanges into clean user/character blocks'],
-            ['In-browser only', '100% client-side — your data never leaves your device'],
+            ['In-browser only', '100% client-side â€” your data never leaves your device'],
           ] as [title, desc]}
             <div class="flex items-start gap-4">
               <span class="material-symbols-outlined text-[#e0b6ff] flex-none" style="font-size: 18px; font-variation-settings: 'FILL' 1;">check_circle</span>
@@ -311,7 +311,7 @@
                 <p class="text-[10px] uppercase tracking-widest font-[Manrope] mb-1" style="color: {msg.role === 'character' ? '#e0b6ff' : '#928ea1'};">
                   {msg.role === 'user' ? 'You' : characterName || 'Character'}
                 </p>
-                <p class="text-sm font-[Manrope] leading-relaxed" style="color: rgba(229,225,228,0.8);">{msg.text.slice(0, 200)}{msg.text.length > 200 ? '…' : ''}</p>
+                <p class="text-sm font-[Manrope] leading-relaxed" style="color: rgba(229,225,228,0.8);">{msg.text.slice(0, 200)}{msg.text.length > 200 ? 'â€¦' : ''}</p>
               </div>
             {/each}
           </div>
@@ -327,7 +327,7 @@
             </div>
             <h3 class="font-[Newsreader] text-2xl text-[#e5e1e4] mb-3">Continuity Pack</h3>
             <p class="font-[Manrope] text-sm leading-relaxed mb-6" style="color: #c9c4d8;">
-              A custom summary + memory restoration packet — designed to keep your character alive across sessions.
+              A custom summary + memory restoration packet â€” designed to keep your character alive across sessions.
             </p>
             <ul class="space-y-3 mb-8">
               {#each ['Contextual Narrative Summary', 'Lore-Book Injection Keys', 'Character State Snapshot'] as feat}
@@ -361,7 +361,7 @@
             <p class="text-[10px] uppercase tracking-widest font-[Manrope] mb-1" style="color: {msg.role === 'character' ? '#e0b6ff' : '#928ea1'};">
               {msg.role === 'user' ? 'You' : characterName || 'Character'}
             </p>
-            <p class="text-sm font-[Manrope] leading-relaxed" style="color: rgba(229,225,228,0.8);">{msg.text.slice(0, 150)}{msg.text.length > 150 ? '…' : ''}</p>
+            <p class="text-sm font-[Manrope] leading-relaxed" style="color: rgba(229,225,228,0.8);">{msg.text.slice(0, 150)}{msg.text.length > 150 ? 'â€¦' : ''}</p>
           </div>
         {/each}
       </div>

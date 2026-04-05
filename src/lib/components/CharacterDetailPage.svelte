@@ -114,13 +114,13 @@
             <div>
               <div class="eyebrow">Next Move</div>
               <h2 class="font-display mt-4 text-[2rem] leading-[1.1] tracking-tight text-white">
-                {isPrivate ? 'Read the overview, then unlock the full prompt.' : 'Copy, open AI Studio, start scene.'}
+                {isPrivate ? 'Read the overview, then unlock the full prompt.' : 'Copy, open your workspace, start the scene.'}
               </h2>
               <p class="mt-4 text-[0.9rem] leading-relaxed text-[var(--text-muted)]">
                 {#if isPrivate}
                   Private prompts only expose the overview and teaser on the public site. The full prompt stays off the page and opens through your Patreon access link.
                 {:else}
-                  The prompt belongs in <strong class="text-white font-medium bg-white/10 px-1 py-0.5 rounded">System instructions</strong>. Your first message should establish context.
+                  The pack belongs in <strong class="text-white font-medium bg-white/10 px-1 py-0.5 rounded">the instruction layer</strong>. Your first message should establish context.
                 {/if}
               </p>
             </div>
@@ -134,7 +134,7 @@
               {:else}
                 <CopyPromptButton prompt={prompt.fullPrompt} characterName={prompt.slug} label="Copy Full Prompt" />
                 <a href={data.aiStudioUrl} target="_blank" rel="noopener noreferrer" class="ghost-button w-full justify-between group/ext">
-                  <span>Open AI Studio</span>
+                  <span>Open Workspace</span>
                   <span class="material-symbols-outlined text-[1rem] group-hover/ext:-rotate-45 transition-transform">arrow_outward</span>
                 </a>
               {/if}
@@ -150,7 +150,7 @@
       <article class="premium-glass p-8 md:p-12 hover:border-[var(--gold)]/30 transition-colors">
         <div class="eyebrow flex items-center gap-2"><span class="h-px w-6 bg-[var(--gold)] inline-block"></span> How to Use</div>
         <h2 class="font-display mt-4 text-[2.8rem] leading-none tracking-tight text-white">
-          {isPrivate ? 'What unlocks after Patreon.' : 'AI Studio handoff'}
+          {isPrivate ? 'What unlocks after Patreon.' : 'Setup handoff'}
         </h2>
 
         <div class="mt-8 grid gap-5">
@@ -177,7 +177,7 @@
             </li>
             <li class="flex items-start gap-3 text-[0.95rem] leading-relaxed text-white/80 pb-4 border-b border-white/5">
               <span class="material-symbols-outlined text-[1.2rem] text-[var(--accent)] shrink-0 mt-0.5">check_circle</span>
-              <span>{isPrivate ? 'The main CTA uses the prompt-specific Patreon link first, then the global Patreon URL.' : 'The CTA sends people straight into AI Studio with no paywall step.'}</span>
+              <span>{isPrivate ? 'The main CTA uses the prompt-specific Patreon link first, then the global Patreon URL.' : 'The CTA sends people straight into the recommended workspace with no paywall step.'}</span>
             </li>
             <li class="flex items-start gap-3 text-[0.95rem] leading-relaxed text-white/80 pb-4 border-b border-white/5">
               <span class="material-symbols-outlined text-[1.2rem] text-[var(--accent)] shrink-0 mt-0.5">check_circle</span>

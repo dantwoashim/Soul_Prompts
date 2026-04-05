@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
-  "description": "SoulPrompts static showcase and waitlist site",
+  "description": "SoulPrompts storefront and owner CMS",
   "scripts": {
     "clean:build": "node scripts/clean-build.mjs",
     "dev": "vite dev",

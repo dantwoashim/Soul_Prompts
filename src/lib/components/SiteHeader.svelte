@@ -38,7 +38,7 @@
       </nav>
 
       <div class="flex items-center gap-2">
-        <a href="/learn/ai-studio/" class="hidden text-[0.7rem] uppercase tracking-widest font-bold text-[var(--text-dim)] hover:text-white sm:inline-flex md:hidden transition-colors">
+        <a href="/learn/guide/" class="hidden text-[0.7rem] uppercase tracking-widest font-bold text-[var(--text-dim)] hover:text-white sm:inline-flex md:hidden transition-colors">
           Guide
         </a>
         <a href={navigation.ctaHref} class="gold-button px-5 py-2.5 text-[0.7rem] shadow-md shadow-[var(--gold)]/20">

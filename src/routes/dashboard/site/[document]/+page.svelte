@@ -38,7 +38,7 @@
             <label class="block"><div class="text-xs uppercase tracking-[0.18em] text-[var(--text-dim)]">Patreon URL</div><input class="field-shell mt-3" name="patreonUrl" value={initial.patreonUrl} /></label>
           </div>
           <div class="mt-5 grid gap-5 md:grid-cols-2">
-            <label class="block"><div class="text-xs uppercase tracking-[0.18em] text-[var(--text-dim)]">AI Studio URL</div><input class="field-shell mt-3" name="aiStudioUrl" value={initial.aiStudioUrl} /></label>
+            <label class="block"><div class="text-xs uppercase tracking-[0.18em] text-[var(--text-dim)]">Launch URL</div><input class="field-shell mt-3" name="aiStudioUrl" value={initial.aiStudioUrl} /></label>
             <label class="block"><div class="text-xs uppercase tracking-[0.18em] text-[var(--text-dim)]">Social Image URL</div><input class="field-shell mt-3" name="socialImageUrl" value={initial.socialImageUrl} /></label>
           </div>
           <div class="mt-5 grid gap-5 md:grid-cols-2">

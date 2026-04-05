@@ -5,7 +5,7 @@
   export let data: PageData;
 </script>
 
-<Seo title={data.seo.title} description={data.seo.description} path="/learn/ai-studio/" />
+<Seo title={data.seo.title} description={data.seo.description} path="/learn/guide/" />
 
 <section class="site-wrap-wide px-0 pb-12 pt-12 md:pb-16 md:pt-20">
   <div class="grid gap-8 lg:grid-cols-[0.95fr_1.05fr] lg:items-end">
@@ -53,7 +53,7 @@
           </div>
 
           <div class="border-t border-[rgba(255,198,62,0.08)] pt-4 text-xs uppercase tracking-[0.18em] text-[var(--text-dim)]">
-            This image is taken from the real AI Studio flow.
+            This image is taken from the real setup flow.
           </div>
         </div>
 

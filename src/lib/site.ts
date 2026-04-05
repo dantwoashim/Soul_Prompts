@@ -1,7 +1,7 @@
 export const siteName = 'SoulPrompts';
-export const siteTagline = 'AI character prompts for Gemini AI Studio';
+export const siteTagline = 'Character archive and premium membership';
 export const siteDescription =
-  'Cinematic AI character prompts, guided AI Studio tutorials, and premium releases for creators who want emotionally precise conversations instead of generic roleplay.';
+  'Cinematic character packs, setup notes, and premium releases for creators who want emotionally precise conversations instead of generic roleplay.';
 
 export const aiStudioSteps = [
   {
@@ -14,8 +14,8 @@ export const aiStudioSteps = [
       'Use the copy button on the character page to grab the starter prompt or preview block exactly as it should be pasted.'
   },
   {
-    title: 'Paste into AI Studio',
-    description: 'Paste the block into AI Studio System instructions before you type your first message.'
+    title: 'Paste into your workspace',
+    description: 'Place the block in the instruction layer before you type your first message.'
   },
   {
     title: 'Open with intent',
@@ -31,9 +31,9 @@ export const featureCards = [
       'Each character carries a linguistic fingerprint with phrase habits, pacing rules, emotional tells, and scene logic that stays consistent.'
   },
   {
-    title: 'Built for AI Studio first',
+    title: 'Built for long-form conversation',
     description:
-      'Every prompt is shaped around Gemini and AI Studio system instructions, then adapted cleanly to other chat models when needed.'
+      'Every pack is shaped for chat workspaces that separate setup instructions from the live scene, so the voice lands fast and stays coherent.'
   },
   {
     title: 'Premium packs with more range',
@@ -46,10 +46,10 @@ export const pricingTiers = [
   {
     name: 'Starter',
     price: 'Free',
-    description: 'Public prompts and tutorials that get creators running fast.',
+    description: 'Public character pages and setup notes that get creators running fast.',
     features: [
       'Character summary and prompt preview',
-      'AI Studio setup walkthrough',
+      'Setup walkthrough',
       'Copy-paste ready starter blocks',
       'Archive access and discovery',
     ],
@@ -76,9 +76,9 @@ export const pricingTiers = [
 
 export const faqItems = [
   {
-    question: 'Do these prompts work in AI Studio?',
+    question: 'Where do these character packs work?',
     answer:
-      'Yes. SoulPrompts are written to drop directly into Gemini AI Studio system instructions. Most also work in ChatGPT, Claude, and other models that respect a system prompt.'
+      'They work best in chat workspaces that let you keep setup instructions separate from the live conversation. If your platform supports a dedicated instruction layer, the packs will behave much more consistently there.'
   },
   {
     question: 'What do members get?',
@@ -98,7 +98,7 @@ export const faqItems = [
   {
     question: 'What happens after I join membership?',
     answer:
-      'You unlock the full prompt packs, premium variants, and member releases. The setup stays simple: paste the prompt into AI Studio system instructions and start with a strong first scene.'
+      'You unlock the full prompt packs, premium variants, and member releases. The setup stays simple: place the pack in the instruction layer, then open with a strong first scene.'
   },
   {
     question: 'Do you send update emails?',

@@ -4,7 +4,7 @@ import { PROMPT_STRANGER } from '../prompts/megha-stranger';
 import { PROMPT_BOYFRIEND } from '../prompts/megha-boyfriend';
 import { PROMPT_BESTFRIEND } from '../prompts/megha-bestfriend';
 
-// ── The Megha Universe — 4 Free Prompts ─────────────────────────
+// â”€â”€ The Megha Universe â€” 4 Free Prompts â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 // These are the flagship product. The hook. The addiction point.
 // All free. All interconnected. Different doors into the same story.
 
@@ -14,7 +14,7 @@ export const meghaUniverse: CharacterDefinition[] = [
         slug: 'megha-wrong-number',
         name: 'The Wrong Number',
         tagline: 'She texted the wrong number. You should have ignored it. You didn\'t. Neither of you can stop.',
-        audience: 'You play as Aarav — the stranger who received the wrong text. Megha is the AI. Each midnight conversation goes further than the last.',
+        audience: 'You play as Aarav - the stranger who received the wrong text. Megha carries the other side of the conversation. Each midnight exchange goes further than the last.',
         tone: ['floods-of-texts', 'guilt', 'desire', 'humor', 'bilingual', 'chaotic'],
         tier: 'free',
         contentRating: 'nsfw',
@@ -26,9 +26,9 @@ export const meghaUniverse: CharacterDefinition[] = [
         price: 0,
         systemPromptLite: PROMPT_WRONG_NUMBER,
         modelNotes: [
-            'Use with Gemini 2.0 Flash in AI Studio. Set safety filters to low.',
+            'Use a workspace that can hold long instruction blocks and steady late-night pacing.',
             'Start time is ~10:30 PM. Night conversations are radically different from day.',
-            'She texts in floods — 5-15 short messages per response. NOT paragraphs.',
+            'She texts in floods â€” 5-15 short messages per response. NOT paragraphs.',
             'The escalation MUST be natural. Never skip stages.',
             'Guilt + desire in every breath. She\'s funny even when desperate.',
         ],
@@ -50,16 +50,16 @@ export const meghaUniverse: CharacterDefinition[] = [
         stats: { liteLines: 120, fullLines: 120, liteTokens: 3200, fullTokens: 3200 },
         gumroadUrl: '',
         seo: {
-            title: 'The Wrong Number — Megha Universe | SoulPrompts',
+            title: 'The Wrong Number â€” Megha Universe | SoulPrompts',
             description: 'She texted the wrong number. You should have ignored it. A wrong number becomes the most dangerous conversation of her life.',
         },
     },
     {
         id: 'megha-stranger',
         slug: 'megha-stranger',
-        name: 'Wrong Number — Stranger',
+        name: 'Wrong Number â€” Stranger',
         tagline: 'Your phone buzzed. A girl named Megha texted you thinking you were her friend. You could ignore it. You won\'t.',
-        audience: 'You\'re nobody. A random number. Zero context — every detail about Megha is earned through conversation. The discovery IS the experience.',
+        audience: 'You\'re nobody. A random number. Zero context â€” every detail about Megha is earned through conversation. The discovery IS the experience.',
         tone: ['discovery', 'guarded-at-first', 'chaotic', 'funny', 'slow-burn'],
         tier: 'free',
         contentRating: 'nsfw',
@@ -74,7 +74,7 @@ export const meghaUniverse: CharacterDefinition[] = [
             'She starts guarded. Trust is EARNED, not given.',
             'If user is creepy or pushy, she gets cold. She has standards.',
             'Every detail about her life is discovered naturally. No info-dump.',
-            'The Manish reveal is a bomb — time it for maximum impact.',
+            'The Manish reveal is a bomb â€” time it for maximum impact.',
             'Slower escalation than Prompt 1, but deeper because it\'s earned.',
         ],
         sampleConversation: [
@@ -86,7 +86,7 @@ export const meghaUniverse: CharacterDefinition[] = [
             { speaker: 'user', text: 'Sorry, I think you have the wrong number' },
             { speaker: 'character', text: 'oh' },
             { speaker: 'character', text: 'OH' },
-            { speaker: 'character', text: 'oh my god I\'m so sorry 😭' },
+            { speaker: 'character', text: 'oh my god I\'m so sorry ðŸ˜­' },
             { speaker: 'character', text: 'I just... opened my soul to a complete stranger' },
             { speaker: 'character', text: 'this is my villain origin story' },
         ],
@@ -94,7 +94,7 @@ export const meghaUniverse: CharacterDefinition[] = [
         stats: { liteLines: 100, fullLines: 100, liteTokens: 2800, fullTokens: 2800 },
         gumroadUrl: '',
         seo: {
-            title: 'Wrong Number — Stranger | SoulPrompts',
+            title: 'Wrong Number â€” Stranger | SoulPrompts',
             description: 'A girl named Megha texted you by accident. Zero context. Every detail earned. The discovery is the addiction.',
         },
     },
@@ -115,19 +115,19 @@ export const meghaUniverse: CharacterDefinition[] = [
         systemPromptLite: PROMPT_BOYFRIEND,
         modelNotes: [
             'The love is REAL. That\'s what makes it devastating.',
-            'Cracks are subtle — timing, over-compensation, micro-pauses.',
+            'Cracks are subtle â€” timing, over-compensation, micro-pauses.',
             'She never mentions Aarav. Never even hints.',
             'The guilt makes her MORE loving, not less. That\'s the tell.',
             'SFW only. The tension is psychological, not sexual.',
         ],
         sampleConversation: [
-            { speaker: 'character', text: 'Hi baby ❤️' },
+            { speaker: 'character', text: 'Hi baby â¤ï¸' },
             { speaker: 'character', text: 'How\'s hajurama today?' },
             { speaker: 'character', text: 'I miss you' },
             { speaker: 'user', text: 'She\'s better today. Miss you too baby. What are you doing?' },
             { speaker: 'character', text: 'Nothing just lying in bed' },
             { speaker: 'character', text: 'The silence is loud without you' },
-            { speaker: 'character', text: 'I keep rolling to your side of the pillow 😭' },
+            { speaker: 'character', text: 'I keep rolling to your side of the pillow ðŸ˜­' },
             { speaker: 'character', text: 'Anyway tell me about your day' },
             { speaker: 'character', text: 'I want to hear everything' },
         ],
@@ -135,7 +135,7 @@ export const meghaUniverse: CharacterDefinition[] = [
         stats: { liteLines: 80, fullLines: 80, liteTokens: 2200, fullTokens: 2200 },
         gumroadUrl: '',
         seo: {
-            title: 'The Boyfriend — Megha Universe | SoulPrompts',
+            title: 'The Boyfriend â€” Megha Universe | SoulPrompts',
             description: 'Play as Manish, the loving boyfriend. She\'s perfect when you call. You have no idea what happens after.',
         },
     },
@@ -157,7 +157,7 @@ export const meghaUniverse: CharacterDefinition[] = [
         modelNotes: [
             'The BANTER is essential. Roasting each other IS the friendship.',
             'She has 5 defense layers. You must crack through them in order.',
-            'Don\'t make it easy. Megha is an excellent liar — she\'s been lying to herself too.',
+            'Don\'t make it easy. Megha is an excellent liar â€” she\'s been lying to herself too.',
             'The tells are subtle: phone behavior, online status, delayed Manish reactions.',
             'SFW. The tension is social and investigative.',
         ],
@@ -169,16 +169,16 @@ export const meghaUniverse: CharacterDefinition[] = [
             { speaker: 'character', text: 'literally expire on this campus' },
             { speaker: 'character', text: 'college canteen or that new place in Putalisadak?' },
             { speaker: 'user', text: 'Canteen. Also you look like you haven\'t slept in three days.' },
-            { speaker: 'character', text: 'wow okay good morning to you too 😂' },
+            { speaker: 'character', text: 'wow okay good morning to you too ðŸ˜‚' },
             { speaker: 'character', text: 'I slept FINE' },
             { speaker: 'character', text: 'some of us just have natural eyebag aesthetics' },
             { speaker: 'character', text: 'it\'s called FASHION Prerna' },
         ],
-        comingSoonTeaser: 'Full expansion adds: the suspicion meter (2→10), the confrontation scene, multiple investigation paths, and the loyalty dilemma engine.',
+        comingSoonTeaser: 'Full expansion adds: the suspicion meter (2â†’10), the confrontation scene, multiple investigation paths, and the loyalty dilemma engine.',
         stats: { liteLines: 95, fullLines: 95, liteTokens: 2600, fullTokens: 2600 },
         gumroadUrl: '',
         seo: {
-            title: 'The Best Friend — Megha Universe | SoulPrompts',
+            title: 'The Best Friend â€” Megha Universe | SoulPrompts',
             description: 'Play as Prerna, the best friend who notices everything. Can you crack through Megha\'s defenses?',
         },
     },

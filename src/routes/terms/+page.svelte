@@ -29,7 +29,7 @@
         <h3>Overview</h3>
         <p class="body-copy">
           SoulPrompts provides downloadable digital prompt products, free prompt previews,
-          and related tools for use with third-party AI platforms. By using this website or
+          and related tools for use with third-party conversation platforms. By using this website or
           purchasing a product from SoulPrompts, you agree to these terms.
         </p>
       </div>
@@ -47,7 +47,7 @@
         <h3>Permitted use</h3>
         <p class="body-copy">
           You may use purchased prompts for your personal entertainment, creative writing,
-          roleplay, and lawful experimentation with compatible AI tools. You may not resell,
+          roleplay, and lawful experimentation with compatible chat tools. You may not resell,
           redistribute, sublicense, publish the full prompt files, or present SoulPrompts
           products as your own work.
         </p>
@@ -86,9 +86,9 @@
       <div class="privacy-card spacer-top">
         <h3>Third-party platforms</h3>
         <p class="body-copy">
-          SoulPrompts products are designed for use with external AI platforms such as AI
-          Studio, ChatGPT, or Claude. SoulPrompts is not responsible for downtime, policy
-          changes, moderation decisions, or output behavior on third-party services.
+          SoulPrompts products are designed for use with external conversation platforms.
+          SoulPrompts is not responsible for downtime, policy changes, moderation decisions,
+          or output behavior on third-party services.
         </p>
       </div>
 
@@ -97,7 +97,7 @@
         <p class="body-copy">
           SoulPrompts is provided on an as-is basis to the maximum extent allowed by law.
           SoulPrompts is not liable for indirect, incidental, or consequential damages arising
-          from use of the site, digital downloads, or third-party AI platforms.
+          from use of the site, digital downloads, or third-party conversation platforms.
         </p>
       </div>
 

@@ -1,6 +1,6 @@
 /**
- * AI Studio Conversation Parser
- * Converts messy AI Studio JSON exports into clean, readable conversation documents.
+ * Conversation export parser
+ * Converts raw JSON exports into clean, readable conversation documents.
  */
 
 export interface ParsedMessage {
@@ -38,7 +38,7 @@ interface RawPart {
 }
 
 /**
- * Parse raw AI Studio JSON export into clean conversation messages.
+ * Parse a raw conversation export into clean conversation messages.
  */
 export function parseConversation(rawJson: string): ParseResult {
   const originalSize = new Blob([rawJson]).size / 1024;
@@ -77,7 +77,7 @@ export function parseConversation(rawJson: string): ParseResult {
         chunks = JSON.parse(rawJson.substring(startIdx, endIdx));
       } catch {
         throw new Error(
-          'Could not parse conversation data. Please ensure you uploaded a valid AI Studio export file.'
+          'Could not parse conversation data. Please ensure you uploaded a valid conversation export file.'
         );
       }
     } else {

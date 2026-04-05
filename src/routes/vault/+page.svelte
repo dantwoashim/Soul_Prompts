@@ -25,7 +25,7 @@
         <a href={data.primaryHref} class="gold-button">
           {data.primaryLabel}
         </a>
-        <a href="/learn/ai-studio/" class="ghost-button">
+        <a href="/learn/guide/" class="ghost-button">
           {data.document.secondaryCtaLabel}
         </a>
       </div>
@@ -76,7 +76,7 @@
     <div class="space-y-5">
       <div class="eyebrow">Use Flow</div>
       <h2 class="display-section max-w-xl text-[var(--text)]">
-        Copy the pack into AI Studio, open the scene, and keep the voice intact.
+        Place the pack in your workspace, open the scene, and keep the voice intact.
       </h2>
     </div>
 
@@ -98,7 +98,7 @@
     <div class="space-y-5">
       <div class="eyebrow">Included In Most Drops</div>
       <h2 class="display-section max-w-xl text-[var(--text)]">
-        More than the prompt block, less fluff than a bloated course.
+        More than the prompt block, less fluff than a bloated playbook.
       </h2>
     </div>
 

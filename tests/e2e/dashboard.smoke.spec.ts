@@ -29,7 +29,7 @@ test('dashboard requires owner login and supports logout', async ({ page }) => {
 test('seeded public and private prompts render different access flows', async ({ page }) => {
   await page.goto('/characters/megha-boyfriend/');
   await expect(page.getByRole('button', { name: 'Copy Full Prompt' })).toBeVisible();
-  await expect(page.getByRole('link', { name: 'Open AI Studio' })).toBeVisible();
+  await expect(page.getByRole('link', { name: 'Open Workspace' })).toBeVisible();
   await expect(page.getByRole('link', { name: 'Unlock On Patreon' })).toHaveCount(0);
 
   await page.goto('/characters/arjun-thapa/');

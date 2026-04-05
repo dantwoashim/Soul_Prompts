@@ -36,9 +36,9 @@ for (const file of [
   'tutorial-1.jpg',
   'tutorial-2.png',
   'tutorial-3.png',
-  'tutorials/ai-studio/step-1.jpg',
-  'tutorials/ai-studio/step-2.png',
-  'tutorials/ai-studio/step-3.png',
+  'tutorials/guide/step-1.jpg',
+  'tutorials/guide/step-2.png',
+  'tutorials/guide/step-3.png',
   '_app/version.json'
 ]) {
   assertExists(resolve(staticRoot, file), `static asset ${file}`);
@@ -65,7 +65,7 @@ const expectedDests = [
   '/dashboard/prompts/[id]',
   '/dashboard/site/[document]',
   '/faq',
-  '/learn/ai-studio',
+  '/learn/guide',
   '/vault',
   '/![-]/catchall'
 ];

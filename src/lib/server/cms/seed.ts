@@ -146,22 +146,22 @@ function buildHomeDocument(): HomeDocument {
       title: `${siteName} | ${siteTagline}`,
       description: siteDescription
     },
-    heroBadge: 'AI Character Prompts For Gemini',
-    heroTitle: 'A cinematic prompt archive built for Gemini AI Studio.',
+    heroBadge: 'Character Packs and Membership Releases',
+    heroTitle: 'A cinematic character archive with a live editorial CMS.',
     heroBody:
-      'SoulPrompts pairs public starter prompts, guided AI Studio tutorials, and premium membership drops so creators can move from discovery to a fully staged conversation without guesswork.',
+      'SoulPrompts pairs public starter packs, guided setup notes, and premium membership drops so visitors can move from discovery to a fully staged conversation without guesswork.',
     primaryCtaLabel: 'Explore the Archive',
     primaryCtaHref: '/catalog/',
-    secondaryCtaLabel: 'Learn AI Studio',
-    secondaryCtaHref: '/learn/ai-studio/',
+    secondaryCtaLabel: 'Read the Setup Guide',
+    secondaryCtaHref: '/learn/guide/',
     tutorialEyebrow: 'Tutorial Workflow',
-    tutorialTitle: 'Copy the prompt, paste into system instructions, then open.',
+    tutorialTitle: 'Copy the pack, place it in the instruction layer, then open the scene.',
     tutorialBody: siteDescription,
     startFreeEyebrow: 'Start Free',
     startFreeTitle: 'Try the characters that are already live.',
     startFreeCtaLabel: 'Browse Full Catalog',
     whyEyebrow: 'Why SoulPrompts',
-    whyTitle: 'Less storefront noise. More narrative weight, system clarity, and handoff polish.',
+    whyTitle: 'Less storefront noise. More narrative weight, setup clarity, and handoff polish.',
     membershipEyebrow: 'Premium Access',
     membershipTitle: 'Join for full prompt packs, premium variants, and member drops.',
     membershipBody:
@@ -176,14 +176,14 @@ function buildVaultDocument(): VaultDocument {
     seo: {
       title: 'Membership | SoulPrompts',
       description:
-        'Join SoulPrompts membership for premium AI Studio prompt packs, recurring drops, members-only bundles, and ongoing character releases.'
+        'Join SoulPrompts membership for premium character packs, recurring drops, members-only bundles, and ongoing character releases.'
     },
     eyebrow: 'Membership Vault',
     title: 'Join for full prompt packs, premium variants, and recurring character drops.',
     body:
-      'Get longer system prompts, sharper voice control, better setup notes, and expanded versions built to run cleanly inside Gemini AI Studio.',
+      'Get longer system packs, sharper voice control, better setup notes, and expanded versions built to run cleanly in modern chat workspaces.',
     primaryCtaLabel: 'Join Membership',
-    secondaryCtaLabel: 'See the AI Studio Guide',
+    secondaryCtaLabel: 'See the Setup Guide',
     membershipHighlights: [
       {
         label: 'Full-length packs',
@@ -195,7 +195,7 @@ function buildVaultDocument(): VaultDocument {
       },
       {
         label: 'Ready to run',
-        body: 'Each drop is built to paste into Gemini AI Studio fast, with clear setup notes and a stronger opening handoff.'
+        body: 'Each drop is built for a fast handoff, with clear setup notes and a stronger opening scene.'
       }
     ],
     memberIncludes: [
@@ -218,7 +218,7 @@ function buildVaultDocument(): VaultDocument {
     ],
     releaseFlow: [
       'Choose a character pack or drop that fits the tone you want.',
-      'Copy the full prompt into Gemini AI Studio system instructions.',
+      'Copy the full pack into the instruction layer of your chat workspace.',
       'Open with a scene-based first message instead of rewriting the prompt.',
       'Use included notes and variants to push the conversation where you want it to go.'
     ],
@@ -226,7 +226,7 @@ function buildVaultDocument(): VaultDocument {
       'Suggested opening lines for faster starts.',
       'Tone notes so the character lands correctly on the first run.',
       'Variant versions when a character needs more softness, pressure, or intensity.',
-      'An easy AI Studio workflow you can reuse without guesswork.'
+      'An easy setup workflow you can reuse without guesswork.'
     ],
     finalTitle: 'Start with the free characters, then join when you want the deeper version.',
     finalBody:
@@ -237,21 +237,21 @@ function buildVaultDocument(): VaultDocument {
 function buildGuideDocument(): GuideDocument {
   return {
     seo: {
-      title: 'AI Studio Guide | SoulPrompts',
+      title: 'Setup Guide | SoulPrompts',
       description:
-        'A step-by-step visual guide for using SoulPrompts inside Gemini AI Studio, including where to paste prompts and how to open the first scene.'
+        'A step-by-step visual guide for using SoulPrompts in a chat workspace, including where to place the pack and how to open the first scene.'
     },
-    eyebrow: 'AI Studio Tutorial',
-    title: 'Copy the prompt, paste it into System instructions, then open with a real scene.',
+    eyebrow: 'Setup Tutorial',
+    title: 'Copy the pack, place it in the instruction layer, then open with a real scene.',
     body:
-      'This walkthrough uses the real Gemini AI Studio interface so visitors know exactly where SoulPrompts belongs, what to copy, and how to start the conversation without flattening the character.',
-    primaryCtaLabel: 'Open AI Studio',
+      'This walkthrough uses the real interface so visitors know exactly where SoulPrompts belongs, what to copy, and how to start the conversation without flattening the character.',
+    primaryCtaLabel: 'Open Workspace',
     primaryCtaHref: aiStudioUrl,
-    secondaryCtaLabel: 'Pick a Prompt First',
+    secondaryCtaLabel: 'Pick a Character First',
     secondaryCtaHref: '/catalog/',
     quickRuleTitle: 'System instructions for the prompt. First message for the scene.',
     quickRuleBody:
-      'The most common mistake is pasting SoulPrompts into the ordinary chat box. The prompt belongs in System instructions. Your first user message should only establish the moment you want to enter.',
+      'The most common mistake is pasting SoulPrompts into the ordinary message box. The pack belongs in the instruction layer. Your first user message should only establish the moment you want to enter.',
     steps: aiStudioTutorialSteps.map((step) => ({
       id: step.id,
       title: step.title,
@@ -277,7 +277,7 @@ function buildFaqDocument(): FaqDocument {
     seo: {
       title: 'FAQ | SoulPrompts',
       description:
-        'Frequently asked questions about SoulPrompts, membership releases, AI Studio setup, and how public versus private prompt access works.'
+        'Frequently asked questions about SoulPrompts, membership releases, setup flow, and how public versus private prompt access works.'
     },
     eyebrow: 'FAQ',
     title: 'Everything you need before you open the archive.',
@@ -290,10 +290,10 @@ function buildFaqDocument(): FaqDocument {
 function buildNavigationDocument(): NavigationDocument {
   return {
     brandName: siteName,
-    brandTagline: 'Prompt Archive for AI Studio',
+    brandTagline: 'Character Archive',
     links: [
       { href: '/catalog/', label: 'Discover' },
-      { href: '/learn/ai-studio/', label: 'AI Studio Guide' },
+      { href: '/learn/guide/', label: 'Setup Guide' },
       { href: '/vault/', label: 'Membership' }
     ],
     ctaLabel: 'Membership',
@@ -301,7 +301,7 @@ function buildNavigationDocument(): NavigationDocument {
     mobileLinks: [
       { href: '/', icon: 'home', label: 'Home' },
       { href: '/catalog/', icon: 'gallery_thumbnail', label: 'Discover' },
-      { href: '/learn/ai-studio/', icon: 'school', label: 'Guide' },
+      { href: '/learn/guide/', icon: 'school', label: 'Guide' },
       { href: '/vault/', icon: 'workspace_premium', label: 'Membership' }
     ]
   };
@@ -310,15 +310,15 @@ function buildNavigationDocument(): NavigationDocument {
 function buildFooterDocument(): FooterDocument {
   return {
     eyebrow: 'SoulPrompts Archive',
-    title: 'Cinematic prompt drops, AI Studio guidance, and premium character packs.',
+    title: 'Cinematic character packs, setup notes, and premium releases.',
     body:
-      'Start with the free characters, learn the AI Studio flow, and join membership when you want the full packs, premium variants, and deeper releases.',
+      'Start with the free characters, learn the setup flow, and join membership when you want the full packs, premium variants, and deeper releases.',
     ctaLabel: 'See Membership',
     ctaHref: '/vault/',
     links: [
       { href: '/', label: 'Home' },
       { href: '/catalog/', label: 'Discover' },
-      { href: '/learn/ai-studio/', label: 'AI Studio Guide' },
+      { href: '/learn/guide/', label: 'Setup Guide' },
       { href: '/faq/', label: 'FAQ' },
       { href: '/terms/', label: 'Terms' },
       { href: '/privacy/', label: 'Privacy' },

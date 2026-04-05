@@ -15,6 +15,6 @@ describe('analytics', () => {
   test('does nothing when plausible is unavailable', () => {
     window.plausible = undefined;
 
-    expect(() => trackEvent('FAQ Open', { question: 'Do these prompts work in AI Studio?' })).not.toThrow();
+    expect(() => trackEvent('FAQ Open', { question: 'Where do these character packs work?' })).not.toThrow();
   });
 });

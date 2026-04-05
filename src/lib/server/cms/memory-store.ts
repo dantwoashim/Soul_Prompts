@@ -248,7 +248,7 @@ export class MemoryCmsRepository {
         tagline: 'A new prompt still waiting for its public-facing hook.',
         overview: 'Start shaping this prompt in the editor. Draft changes stay private until you publish.',
         teaser: 'Draft teaser pending.',
-        audience: 'People who want a cinematic AI Studio scene with a clear voice and fast setup.',
+        audience: 'People who want a cinematic character setup with a clear voice and fast onboarding.',
         tone: ['slow burn'],
         accessMode: 'private',
         contentRating: 'sfw',
@@ -363,7 +363,7 @@ export class MemoryCmsRepository {
       seo: {
         title: 'Discover | SoulPrompts',
         description:
-          'Browse the SoulPrompts archive of public starter prompts, private member drops, and AI Studio-ready character worlds.'
+          'Browse the SoulPrompts archive of public starter prompts, private member drops, and character worlds built for long-form conversation.'
       },
       featured: prompts.filter((prompt) => prompt.featuredGroups.includes('catalog_flagship')).slice(0, 4),
       prompts

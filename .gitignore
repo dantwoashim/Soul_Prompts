@@ -5,3 +5,14 @@ node_modules
 .env
 
 .vercel
+.codex-preview*.log
+.codex-screens/
+.playwright-cli/
+test-results/
+output/
+htdocs/
+htdocs.zip
+Stitch/
+Stitch.zip
+soulprompts_strategy_pack/
+Characters/New Text Document.md
