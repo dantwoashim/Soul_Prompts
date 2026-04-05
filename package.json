@@ -5,24 +5,37 @@
   "type": "module",
   "description": "SoulPrompts static showcase and waitlist site",
   "scripts": {
+    "clean:build": "node scripts/clean-build.mjs",
     "dev": "vite dev",
-    "build": "vite build",
+    "build": "npm run clean:build && svelte-kit sync && vite build",
     "preview": "vite preview",
     "check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
     "test": "svelte-kit sync && vitest run",
+    "test:playwright": "playwright test",
+    "db:apply": "tsx scripts/apply-cms-schema.mjs",
+    "hash:admin": "tsx scripts/hash-admin-password.mjs",
     "verify": "npm run check && npm run test && npm run build && node scripts/check-build-output.mjs"
   },
   "devDependencies": {
-    "@sveltejs/adapter-static": "^3.0.8",
+    "@playwright/test": "^1.58.2",
     "@sveltejs/kit": "^2.22.0",
     "@sveltejs/vite-plugin-svelte": "^5.1.0",
+    "@tailwindcss/vite": "^4.2.2",
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/svelte": "^5.2.8",
     "jsdom": "^26.0.0",
     "svelte": "^5.38.0",
     "svelte-check": "^4.1.1",
+    "tailwindcss": "^4.2.2",
+    "tsx": "^4.21.0",
     "typescript": "^5.7.3",
     "vite": "^6.3.5",
     "vitest": "^3.2.4"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.100.0",
+    "@sveltejs/adapter-vercel": "^6.3.3",
+    "postgres": "^3.4.8",
+    "zod": "^4.3.6"
   }
 }

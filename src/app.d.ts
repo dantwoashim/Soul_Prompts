@@ -15,6 +15,23 @@ declare global {
   interface Window {
     plausible?: (eventName: string, options?: { props?: Record<string, string> }) => void;
   }
+
+  namespace App {
+    interface Locals {
+      adminSession: {
+        active: boolean;
+        expiresAt: string | null;
+      };
+    }
+
+    interface PageData {
+      shell?: import('$lib/cms/types').SiteShellData;
+      adminSession?: {
+        active: boolean;
+        expiresAt: string | null;
+      };
+    }
+  }
 }
 
 export {};

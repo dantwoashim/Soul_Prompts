@@ -1,0 +1,13 @@
+node_modules
+.svelte-kit
+build
+coverage
+.env
+.env.*
+htdocs.zip
+Stitch.zip
+Stitch
+stitch
+ai_studio_images
+/Characters
+soulprompts_strategy_pack
