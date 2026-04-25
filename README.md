@@ -4,6 +4,13 @@ SoulPrompts is a SvelteKit application for publishing a curated character archiv
 
 The public site handles discovery, character pages, membership access, legal pages, and lightweight onboarding. The dashboard handles drafts, publishing, Patreon gating, site copy, featured collections, and release history. Private releases stay server-side until they are meant to be seen.
 
+## Portfolio docs
+
+- [Case study](docs/CASE_STUDY.md)
+- [Demo script](docs/DEMO_SCRIPT.md)
+- [Security policy](SECURITY.md)
+- [Contributing](CONTRIBUTING.md)
+
 ## What is in the repo
 
 - A public catalog with character pages, archive browsing, membership pages, and support content
