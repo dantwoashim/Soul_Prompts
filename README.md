@@ -7,7 +7,6 @@ The public site handles discovery, character pages, membership access, legal pag
 ## Portfolio docs
 
 - [Case study](docs/CASE_STUDY.md)
-- [Demo script](docs/DEMO_SCRIPT.md)
 - [Security policy](SECURITY.md)
 - [Contributing](CONTRIBUTING.md)
 
