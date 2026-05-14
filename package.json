@@ -24,7 +24,7 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/svelte": "^5.2.8",
     "jsdom": "^26.0.0",
-    "svelte": "^5.38.0",
+    "svelte": "^5.55.7",
     "svelte-check": "^4.1.1",
     "tailwindcss": "^4.2.2",
     "tsx": "^4.21.0",
